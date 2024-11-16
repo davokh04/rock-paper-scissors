@@ -33,4 +33,13 @@ function playRound(humanChoice, computerChoice) {
     return console.log(`You won! You: ${humanChoice} / Computer: ${computerChoice}`)
 }
 
-playRound(getHumanChoice(), getComputerChoice())
+function playGame() {
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log(`You: ${humanScore} / Computer: ${computerScore}`);
+}
+
+playGame()
